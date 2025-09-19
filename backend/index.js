@@ -18,6 +18,15 @@ const io = socketIo(server, {
 app.use(cors());
 app.use(express.json());
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.status(200).json({ 
+    status: 'healthy', 
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime()
+  });
+});
+
 // In-memory storage for game sessions
 const gameSessions = new Map();
 const players = new Map();

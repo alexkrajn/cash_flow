@@ -1,0 +1,20 @@
+{
+  "name": "Cash Flow Game",
+  "short_name": "Cash Flow",
+  "description": "Интерактивная игра Cash Flow для обучения финансовой грамотности",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#4CAF50",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["games", "education"],
+  "lang": "ru",
+  "dir": "ltr"
+}
